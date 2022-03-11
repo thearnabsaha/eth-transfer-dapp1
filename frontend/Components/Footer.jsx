@@ -8,11 +8,10 @@ const Footer = () => {
                     </div>
                     <div className="right">
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><a href="">Market</a></li>
+                            <li><a href="">Exchange</a></li>
+                            <li><a href="">Tutorials</a></li>
+                            <li><a href="">Wallets</a></li>
                         </ul>
                     </div>
                 </div>

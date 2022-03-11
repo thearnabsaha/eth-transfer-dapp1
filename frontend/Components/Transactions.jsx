@@ -1,8 +1,10 @@
 const Transactions = () => {
     return (
-        <div>
-            Enter
-        </div>
+        <>
+            <div id="tarnsaction" className="gradient-bg-transactions">
+                
+            </div>
+        </>
     );
 }
 

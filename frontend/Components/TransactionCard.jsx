@@ -1,7 +1,7 @@
 const TransactionCard = () => {
     return (
         <>
-            <div id="card">
+            <div id="card" className="blue-glassmorphism">
                 
             </div>
         </>

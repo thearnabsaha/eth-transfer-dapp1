@@ -25,6 +25,12 @@ const Transactions = () => {
                         <div className="card">
                             <TransactionCard/>
                         </div>
+                        <div className="card">
+                            <TransactionCard/>
+                        </div>
+                        <div className="card">
+                            <TransactionCard/>
+                        </div>
                     </div>
                 </div>
             </div>

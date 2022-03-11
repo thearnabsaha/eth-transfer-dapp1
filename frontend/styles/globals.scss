@@ -1,0 +1,346 @@
+//? ######################################### CSS RESET ###################################################
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+//? #########################################  UTILITY CLASSES ###################################################
+.gradient-bg-welcome {
+  background-color:#0f0e13;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+}
+.gradient-bg-services {
+  background-color:#0f0e13;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
+}
+
+.gradient-bg-transactions {
+  background-color: #0f0e13;
+  background-image: 
+    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,25%,1) 0, transparent 50%);
+}
+
+.gradient-bg-footer {
+  background-color: #0f0e13;
+  background-image: 
+    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 53%), 
+    radial-gradient(at 50% 150%, hsla(339,49%,30%,1) 0, transparent 50%);
+}
+.whitespace{
+  margin: auto;
+  width: 80%;
+}
+.text-gradient {
+  background-color: #fff;
+background: linear-gradient(309deg, rgba(30,0,48,1) 0%, rgba(185,176,191,1) 32%, rgba(255,255,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.eth-card {
+  background-color:#a099ff;
+  background-image: 
+    radial-gradient(at 83% 67%, rgb(152, 231, 156) 0, transparent 58%), 
+    radial-gradient(at 67% 20%, hsla(357,94%,71%,1) 0, transparent 59%), 
+    radial-gradient(at 88% 35%, hsla(222,81%,65%,1) 0, transparent 50%), 
+    radial-gradient(at 31% 91%, hsla(9,61%,61%,1) 0, transparent 52%), 
+    radial-gradient(at 27% 71%, hsla(336,91%,65%,1) 0, transparent 49%), 
+    radial-gradient(at 74% 89%, hsla(30,98%,65%,1) 0, transparent 51%), 
+    radial-gradient(at 53% 75%, hsla(174,94%,68%,1) 0, transparent 45%);
+}
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+//? ######################################### HOME STYLING ###################################################
+#home{
+  width: 100vw;
+  height: 100vh;
+  .navbar{
+    .container{
+      margin: auto;
+      width: 65vw;
+      display: flex;
+      justify-content: space-between;
+      h1{
+        font-size: 3.5rem;
+        padding-top: 2.5rem;
+      }
+      ul{
+        display: flex;
+        list-style: none;
+        li{
+          padding: 2.5rem 1.5rem;
+          a{
+            font-size: 1.8rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: ease-in-out .3s;
+            &:hover{
+              color: #ccc;              
+            }
+          }
+          .login{
+            transition: ease-in-out;
+            background-color: hsl(227, 77%, 53%);
+            padding: .8rem 2rem;
+            border-radius: 2rem;
+            &:hover{
+            background-color: hsl(227, 77%, 43%);
+            color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//? ######################################### MAIN STYLING ###################################################
+.main{
+  color: #fff;
+  display: flex;
+  margin-top: 10rem;
+  width: 65vw;
+  .left{
+    h1{
+      font-size: 4rem;
+      font-weight:500;
+      width: 60%;
+    }
+    p{
+      margin-top: 2rem;
+      line-height: 2.5rem;
+      font-size: 1.7rem;
+      width: 60%;
+    }
+    button{
+      display: flex;
+      margin-top: 2rem;
+      background-color: hsl(227, 77%, 53%);
+      font-size: 1.5rem;
+      padding: 1.5rem 1.5rem;
+      outline: none;
+      border: none;
+      border-radius: 1rem;
+      font-weight: 600;
+      align-items: center;
+      .play{
+        font-size: 2rem;
+        align-items: center;
+        margin-right: 1rem;
+      }
+      &:hover{
+        background-color: hsl(227, 77%, 43%);
+        cursor: pointer;
+      }
+    }
+    .table{
+      margin-top: 5rem;
+      .col{
+        display: flex;
+        .rowu{
+          border-left: 1px solid rgba(255, 255, 255, 0.5);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+          border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .rowb{
+          border-left: 1px solid rgba(255, 255, 255, 0.5);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .row1{
+          border-top-left-radius: 2rem;
+        }
+        .row3{
+          border-top-right-radius: 2rem;
+          border-right: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .row4{
+          border-bottom-left-radius: 2rem;
+        }
+        .row6{
+          border-bottom-right-radius: 2rem;
+          border-right: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .row{
+          display: flex;
+          font-size: 1.5rem;
+          width: 150px;
+          justify-content: center;
+          align-items: center;
+          height: 70px;
+        }
+      }
+    }
+  }
+  .right{
+    .eth-card{
+      margin-left: 5rem;
+      width: 300px;
+      position: relative;
+      height: 150px;
+      border-radius: 1rem;
+      padding-left: 1rem;
+      .ethlogo{
+        font-size: 3.5rem;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        position: absolute;
+        top: 10px;
+      }
+      .ilogo{
+        font-size: 2rem;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+      .ethaddress{
+        position: absolute;
+        bottom: 50px;
+        margin-top: 3rem;
+        font-size: 1.7rem;
+      }
+      .coin{
+        position: absolute;
+        font-size: 2rem;
+        font-weight: 600;
+        bottom: 15px;
+      }
+    }
+    .txForm{
+      width: 400px;
+      height: 300px;
+      margin-top: 3rem;
+      border-radius: 2rem;
+      display: flex;
+      justify-content: center;
+      form{
+        margin-top: 3rem;
+        input{
+          margin-bottom: 1rem;
+          border-radius: .5rem;
+          font-size: 1.5rem;
+          display: block;
+          width: 350px;
+          padding-left: 1rem;
+          height: 40px;
+          outline: none;
+          &:hover{
+            border: 1px solid hsl(227, 77%, 53%);
+          }
+          &:focus{
+            border: 1px solid hsl(227, 77%, 53%);
+          }
+        }
+        .hr{
+          width: 350px;
+          height: 1px;
+          background-color: rgba(255, 255, 255, 0.541);
+          margin-top: 2rem;
+        }
+        button{
+          margin-top: 2rem;
+          width: 350px;
+          height: 50px;
+          background-color: #0f0e1325;
+          border: none;
+          outline: none;
+          font-size: 2rem;
+          font-weight: 100;
+          border: 1px solid #414e79;
+          border-radius: .5rem;
+          cursor: pointer;
+          color: rgba(255, 255, 255, 0.418);
+          &:hover{
+            background-color: #252844;
+          }
+        }
+      }
+    }
+  }
+}
+//? ######################################### ABOUT STYLING ###################################################
+#about{
+  padding-top: 10rem;
+  height: 70vh;
+  .container{
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    .left{
+      h1{
+        width: 50%;
+        font-size: 4rem;
+        font-weight: 400;
+      }
+      p{
+        width: 60%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-top: 3rem;
+      }
+    }
+    .right{
+      .services{
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+        padding: 1rem;
+        .icon{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 4rem;
+          border-radius: 50%;
+          padding-left: 1rem;
+          width: 50px;
+          height: 50px;
+        }
+        .icon1{
+          background-color: rgb(51, 81, 218);
+        }
+        .icon2{
+          background-color: rgb(128, 73, 239);
+        }
+        .icon3{
+          background-color: rgb(229, 84, 86);
+        }
+        .content{
+          font-size: 2rem;
+          padding-left: 1rem;
+          h1{
+            font-size: 2rem;
+            padding: 0rem 1rem;
+          }
+          p{
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+

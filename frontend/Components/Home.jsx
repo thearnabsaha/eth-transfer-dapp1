@@ -46,6 +46,7 @@ const Home = () => {
                             <form action="">
                                 <input type="text" placeholder="Address to" className="blue-glassmorphism"/>
                                 <input type="number" step={.0001} placeholder="Amount(ETH)" className="blue-glassmorphism"/>
+                                <input type="text" placeholder="message" className="blue-glassmorphism"/>
                                 <div className="hr"></div>
                                 <button className="blue-glassmorphism">Send Now</button>
                             </form>
